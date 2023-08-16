@@ -28,7 +28,7 @@ if (hwale_length_m > 35) {
 
 ```
 
-# Switch statements 
+# Switch statements
 
 ```{r}
 housing_type <- "single"
