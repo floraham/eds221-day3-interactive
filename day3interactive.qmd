@@ -16,15 +16,12 @@ if (temperature > 97) {
 Create an if else statement for blue whales lengths. Create a variable blue whale, which has a value of 40. Add an if else statemenet that returns "GIANT" if the length exceeds 35, "MEDIUM" if the length is between 20 and 35, or "SMALL" if the length is \<=20
 
 ```{r}
-whale_length_m <- 40 
-
-if (hwale_length_m > 35) {
-  print("giant")
-} else if (whale_length_m >= 20 & whale_length_m <= 35){
-  print("MEDIUM")
-} else (whale_length_m <= 20) {
-  print("small")
-}
+whale_length_m<- 15
+if ( whale_length_m > 35) {
+  print("GIANT")
+}else if (whale_length_m >= 20 & whale_length_m<= 35){
+    print("MEDIUM")
+  }else if (whale_length_m <20) {print("SMALL")}
 
 ```
 
@@ -46,4 +43,29 @@ if (housing_type == "whole") {
   print("400")
 }
 
+```
+
+# for loops
+
+```{r}
+height <- c(58, 61, 65, 72, 89, 94)
+
+for (i in seq_along(height)){
+  half_height = height[i] / 2
+  print(half_height)
+}
+
+## For each value in the height vector, return the sum of the value + the one right after it... 
+for (i in seq_along(height)){
+  print(height[i]+height[i+1])
+}
+```
+
+## write a for loop that calculates the value of height for each element divided by the mean of the entire height vector 
+
+```{r}
+for (i in seq_along(height)){
+  mean_height = mean(height)
+  print(height[i]/mean_height)
+}
 ```
